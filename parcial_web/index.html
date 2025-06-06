@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Princesas - Soluciones Digitales Innovadoras</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Princesa</h1>
+            <p>Todas podemos ser princesas</p>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#Servicios para Princesas">Servicios</a></li>
+                <li><a href="#nosotros">Nuestra comunidad de princesas</a></li>
+                <li><a href="#contacto">Contactate con tu hada madrina</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Transforma tu dia especial en uno magico</h2>
+                <p>Sueños, hadas y mucho polvo de hadas</p>
+                <button class="cta-button">Conoce más princesa</button>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>Nuestros Servicios reales</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Princesa del Castillo</h3>
+                        <p>Podes pasar un dia como una princesa en un bello restaurante en zona vip</p>
+                    </article>
+                    <article class="service-card">
+                        <h3></h3>
+                        <p>Dia De Reina con Hadas.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Princesa del pantano</h3>
+                        <p>Este dia incluye un picnic en un pantano a eleccion </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="descuento" class="discount">
+            <div class="container">
+                <h2>Calcula especial de nuestra familia real</h2>
+                <div class="discount-calculator">
+                    <label for="precio-base">Precio base de un dia como princesa:</label>
+                    <input type="number" id="precio-base" placeholder="Ej: 100000">
+                    <label for="porcentaje-descuento">Porcentaje de descuento para la princesa:</label>
+                    <input type="number" id="porcentaje-descuento" placeholder="Ej: 15" min="0" max="100">
+                    <button id="calcular-descuento">Calcular</button>
+                    <div id="resultado-descuento"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>Contáctanos para organizar tu dia magico</h2>
+                <form id="contact-form" action="formulario.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre de la Princesa:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span class="error-message" id="nombre-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Real:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Que tipo de princesa sos:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                        <span class="error-message" id="asunto-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Como te gustaria tu dia soñado:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <span class="error-message" id="mensaje-error"></span>
+                    </div>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
